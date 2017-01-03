@@ -5,3 +5,11 @@ $blue: #80C9D6;
 $body-color: $grey;
 $primary-color: $blue;
 $secondary-color: $grey;
+
+$foundation-palette: (
+  primary:    $primary-color,
+  secondary:  $secondary-color,
+  success:    #3adb76, // not used
+  warning:    #ffae00, // not used
+  alert:      #cc4b37, // not used
+);

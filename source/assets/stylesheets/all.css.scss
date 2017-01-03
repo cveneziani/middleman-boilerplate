@@ -10,6 +10,13 @@
 @include foundation-everything(true);
 
 // Styling!
+// 1. base/
 @import "base/typography";
-@import "layout/banner";
+
+// 2. components/
+
+// 3. layout/
+@import "layout/navbar";
+
+// 4. pages/
 @import "pages/home";

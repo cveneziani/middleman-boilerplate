@@ -1,9 +1,33 @@
 ---
-title: Welcome to FNU
+title: Welcome to Middleman Boilerplate
 ---
 
-div class="home"
-  = image_tag "turtle.png", class: 'logo'
-  h1 FNU
-div class="welcome"
-  p class="tagline" De website voor schildpadden 🐢
+div class="home-intro"
+  = image_tag "logo-transparent.png", class: 'logo', alt: 'Cute Turtle'
+  h1 = data.site.name
+  p class="sith" = data.site.baseline
+div class="home-features"
+  div class="row"
+    div class="small-12 columns"
+      h2 What's included?
+  div class="row"
+    div class="small-12 medium-6 columns"
+      h3 Tools & Frameworks
+      ul class="no-bullet"
+        li = link_to 'Slim', 'http://slim-lang.org/'
+        li = link_to 'Sass', 'http://sass-guidelin.es/'
+        li = link_to 'Yarn', 'https://yarnpkg.com/'
+        li = link_to 'Foundation Sites', 'http://foundation.zurb.com/sites/docs/'
+    div class="small-12 medium-6 columns"
+      h3 Middleman plugins
+      ul class="no-bullet"
+        li = link_to 'Autoprefixer', 'https://github.com/middleman/middleman-autoprefixer'
+        li = link_to 'Compass', 'http://compass-style.org/'
+        li = link_to 'Minify HTML', 'https://github.com/middleman/middleman-minify-html'
+        li = link_to 'Protect emails', 'https://github.com/amsardesai/middleman-protect-emails'
+        li = link_to 'Robots', 'https://rubygems.org/gems/middleman-robots'
+        li = link_to 'Sitemap', 'https://rubygems.org/gems/middleman-sitemap'
+        li = link_to 'Deploy', 'https://rubygems.org/gems/middleman-deploy'
+  div class="row"
+    div class="small-12 columns"
+      p Find me in <code>source/index.html.slim</code>

@@ -1,6 +1,7 @@
 // 1. Global
 // ---------
 $body-background:   $white;
+$body-font-color:   $body-color;
 $body-font-family:  $font-family-sans-serif;
 $global-flexbox:    true;
 
@@ -14,3 +15,7 @@ $input-font-family: $font-family-sans-serif-neutral;
 $input-background: $white;
 $input-background-focus: $white;
 
+// 37. Top Bar
+// -----------
+$topbar-padding: 0 0.5rem;
+$topbar-background: $white;

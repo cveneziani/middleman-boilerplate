@@ -1,0 +1,11 @@
+div class="top-bar"
+  div class="top-bar-left"
+    ul class="dropdown menu"
+      li class="menu-text"
+        = link_to data.site.name, '/index.html', class: 'navbar-home-link'
+  div class="top-bar-right"
+    ul class="menu"
+      li
+        = link_to 'About', '/about.html'
+      li
+        = mail_to data.site.mail, 'Contact'
