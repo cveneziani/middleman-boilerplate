@@ -1,3 +1,21 @@
+.index {
+  .top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .top-bar, ul {
+    background-color: transparent;
+  }
+
+  a {
+    color: $white;
+    font-weight: $font-weight-bold;
+  }
+}
+
 .home, .welcome {
   height: 100vh;
 

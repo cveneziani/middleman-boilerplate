@@ -13,4 +13,14 @@ html
     = javascript_include_tag :all
 
   body class="#{page_classes}"
+    div class="top-bar"
+      div class="top-bar-left"
+        ul class="dropdown menu"
+          li class="menu-text" FNU
+      div class="top-bar-right"
+        ul class="menu"
+          li
+            a href="#" Tortue
+          li
+            a href="#" Turtle
     = yield
