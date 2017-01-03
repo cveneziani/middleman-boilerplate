@@ -1,5 +1,10 @@
 ::Sass.load_paths << File.join(root, "node_modules")
 
+set :css_dir,     'assets/stylesheets'
+set :fonts_dir,   'assets/fonts'
+set :images_dir,  'assets/images'
+set :js_dir,      'assets/js'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
