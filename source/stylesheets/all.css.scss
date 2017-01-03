@@ -1,42 +1,10 @@
 @charset "utf-8";
+
 @import "normalize";
-@import "colors";
-@import "variables";
 
-body {
-  color: $grey;
-  background: $blue;
-  text-align: center;
-  font-family: $font-family;
-  font-size: 1em;
-}
+@import "settings/colors";
+@import "settings/variables";
 
-.logo {
-  height: 18.75em;
-  margin-top: 6em;
-}
-
-h1 {
-  color: $grey;
-  font-family: $font-family;
-  font-size: 1.8em;
-  font-weight: 700;
-  margin: 1em;
-}
-
-.home, .welcome {
-  height: 100vh;
-}
-
-.welcome {
-  background-image: image-url('background.jpg');
-  background-size: cover;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tagline {
-  font-size: 1.7em;
-}
+@import "base/typography";
+@import "layout/banner";
+@import "pages/home";
