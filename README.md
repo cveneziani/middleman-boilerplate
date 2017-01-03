@@ -121,6 +121,12 @@ For instance, we bundled this boilerplate with `foundation-sites`. The file we w
 @import "foundation-sites/scss/foundation";
 ```
 
+### Style Guide
+
+We also provide a **style guide** page. To have a look at it, just open a page on [http://localhost:4567/style-guide.html](http://localhost:4567/style-guide.html)
+
+Anytime you change a color / font, add a vendor plugin or a component, this page should be updated in order to showcase what's available to design your pages.
+
 ## Still under discussion
 
 Choose a **Javascript** pipeline. Might be **Webpack**.

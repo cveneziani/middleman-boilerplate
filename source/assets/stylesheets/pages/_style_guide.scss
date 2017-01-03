@@ -1,0 +1,19 @@
+.p-style-guide--entry {
+  margin-top: rem-calc(10);
+}
+
+.p-style-guide--colors {
+  .color {
+    height: rem-calc(80);
+  }
+
+  .blue { background-color: $blue; }
+  .grey { background-color: $grey; }
+  .white { background-color: $white; }
+}
+
+.p-style-guide--sidebar {
+  a {
+    color: $body-color;
+  }
+}
