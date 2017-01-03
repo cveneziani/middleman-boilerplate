@@ -1,0 +1,12 @@
+.inline-list {
+  // no-bullet
+  margin-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    // not on the first one ;)
+    &:nth-child(n+2) { margin-left: rem-calc(30); }
+  }
+}
