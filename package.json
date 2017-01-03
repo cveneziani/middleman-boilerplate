@@ -1,0 +1,8 @@
+{
+  "name": "middleman-boilerplate",
+  "version": "0.0.0",
+  "description": "Ready to use Middleman 4 template 🐢",
+  "main": "all.js",
+  "author": "Cecile Veneziani <contact@cecilitse.org>",
+  "license": "GPL"
+}
