@@ -1,2 +1,7 @@
-$font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i|Francois+One|Fanwood+Text|Open+Sans');
+
+$font-family-sans-serif-neutral: 'Open Sans', sans-serif;
+$font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: 'Francois One', Georgia, Cambria, "Times New Roman", serif;
+
 $font-weight-bold: 700;
