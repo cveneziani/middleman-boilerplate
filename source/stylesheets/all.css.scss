@@ -1,10 +1,14 @@
 @charset "utf-8";
 
-@import "normalize";
-
+// Settings
 @import "settings/colors";
 @import "settings/variables";
 
+// Vendors
+@import "foundation-sites/scss/foundation";
+@include foundation-everything(true);
+
+// Styling!
 @import "base/typography";
 @import "layout/banner";
 @import "pages/home";

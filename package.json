@@ -4,5 +4,8 @@
   "description": "Ready to use Middleman 4 template 🐢",
   "main": "all.js",
   "author": "Cecile Veneziani <contact@cecilitse.org>",
-  "license": "GPL"
+  "license": "GPL",
+  "devDependencies": {
+    "foundation-sites": "^6.3.0"
+  }
 }
