@@ -1,67 +1,42 @@
 @charset "utf-8";
 @import "normalize";
+@import "colors";
+@import "variables";
 
 body {
-  background: #ECC561;
+  color: $grey;
+  background: $blue;
   text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-family;
   font-size: 1em;
 }
 
-.logo img {
+.logo {
   height: 18.75em;
   margin-top: 6em;
 }
 
 h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $grey;
+  font-family: $font-family;
   font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
+  font-weight: 700;
+  margin: 1em;
 }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
-    }
-  }
+.home, .welcome {
+  height: 100vh;
 }
 
 .welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
+  background-image: image-url('background.jpg');
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+.tagline {
+  font-size: 1.7em;
 }

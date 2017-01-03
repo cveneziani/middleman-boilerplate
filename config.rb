@@ -31,6 +31,8 @@ page '/*.txt',  layout: false
 
 # Build-specific configuration
 configure :build do
+  activate :asset_hash
+
   # Minify CSS on build
   # activate :minify_css
 
