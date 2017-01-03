@@ -124,3 +124,7 @@ For instance, we bundled this boilerplate with `foundation-sites`. The file we w
 ## Still under discussion
 
 Choose a **Javascript** pipeline. Might be **Webpack**.
+
+## License
+
+This project is released under the GPL License.
