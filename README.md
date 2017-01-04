@@ -79,10 +79,11 @@ This is where you'll set your website **name**, **baseline**, **url**, **author 
 
 ### Pages
 
-Two pages are already provided for you:
+Three pages are already provided for you:
 
 - **Home:** source/index.html.slim
 - **About:** source/about.html.slim
+- **Page not found:** source/404.html.slim
 
 Feel free to edit the home page and/or remove the about page.
 
