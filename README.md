@@ -1,4 +1,6 @@
-# Middleman boilerplate
+![Middleman Boilerplate Banner](source/assets/images/banner-meta.jpg)
+
+# Middleman Boilerplate
 
 This is a boilerplate for [Middleman 4](http://middlemanapp.com/).
 
