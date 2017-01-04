@@ -9,4 +9,7 @@
   <url>
     <loc>http://cveneziani.github.io/middleman-boilerplate//about.html</loc>
   </url>
+  <url>
+    <loc>http://cveneziani.github.io/middleman-boilerplate//404.html</loc>
+  </url>
 </urlset>
