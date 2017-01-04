@@ -86,7 +86,12 @@ Feel free to edit the home page or remove the about page.
 
 ### Images
 
-Three images are provided: `logo.jpg` used as favicon and the other ones used in the homepage.
+Four images are provided:
+
+- `logo.jpg` mainly used as favicon
+- `banner-meta.jpg` used for meta tag cards
+- and the other ones are used on the homepage
+
 Again, feel free to change or remove them.
 
 ### Stylesheets
@@ -126,6 +131,33 @@ For instance, we bundled this boilerplate with `foundation-sites`. The file we w
 We also provide a **style guide** page. To have a look at it, just open a page on [http://localhost:4567/style-guide.html](http://localhost:4567/style-guide.html)
 
 Anytime you change a color / font, add a vendor plugin or a component, this page should be updated in order to showcase what's available to design your pages.
+
+### Meta Tags
+We provide a default preset of meta tag rules. They're based on 2 things:
+
+- `data.site` hash for any default configuration
+- **frontmatter** variables provided in every HTML page template for per page configuration
+
+The following rules are applied:
+
+- **Page Title:** If present, uses frontmatter variable `page_title` in combination with `data.site.name`. Otherwise, only uses `data.site.name`.
+- **Title:** If present, uses frontmatter variable `page_title`. Otherwise, fallbacks to `data.site.name`.
+- **Description:** Uses the first available frontmatter variable between `summary` and `description`. Otherwise, fallbacks to `data.site.baseline`
+- **Image:** Uses the first available frontmatter variable between `banner_picture` and `cover_picture`. Otherwise, fallbacks to `banner-meta.jpg`
+- **Site Name:** Uses `data.site.name`
+- **Twitter Account:** Uses `data.site.twitter`
+- **Geocoding:** Uses the `data.site.geocoding` hash.
+- **URL:** Computed based on `data.site.url` and the current page seen.
+
+If you want to change some of these rules, have a look at `helpers/meta_tags_helper.rb`
+And feel free to fine tune the frontmatter variables on all your pages.
+
+As a recap, here are the variables that can be customized per page:
+
+- **Page Title:** `page_title`
+- **Title:** `page_title`
+- **Description:** `summary` or `description`
+- **Image:** `banner_picture` or `cover_picture`
 
 ## Still under discussion
 

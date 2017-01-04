@@ -1,0 +1,36 @@
+meta charset="utf-8"
+meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+meta name="viewport"              content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+
+title= meta_tag_page_title
+meta name="description"           content=meta_tag_description
+
+/ Geocoding
+meta name="geo.placename"         content=data.site.geocoding.place
+meta name="geo.position"          content="#{data.site.geocoding.latitude};#{data.site.geocoding.longitude}"
+meta name="geo.region"            content=data.site.geocoding.region
+
+/ Microdata
+meta itemprop="name"              content=meta_tag_title
+meta itemprop="description"       content=meta_tag_description
+meta itemprop="image"             content=meta_tag_image
+
+/ Facebook Open Graph data
+meta property="og:site_name"      content=meta_tag_site_name
+meta property="og:title"          content=meta_tag_title
+meta property="og:description"    content=meta_tag_description
+meta property="og:image"          content=meta_tag_image
+meta property="og:type"           content="website"
+meta property="og:url"            content=meta_tag_url
+
+/ Google+
+meta itemprop="name"              content=meta_tag_title
+meta itemprop="description"       content=meta_tag_description
+meta itemprop="image"             content=meta_tag_image
+
+/ Twitter Card data
+meta name="twitter:card"          content="summary_large_image"
+meta name="twitter:site"          content=meta_tag_twitter
+meta name="twitter:title"         content=meta_tag_title
+meta name="twitter:description"   content=meta_tag_description
+meta name="twitter:image"         content=meta_tag_image
