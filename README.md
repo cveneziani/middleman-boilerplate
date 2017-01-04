@@ -1,4 +1,4 @@
-![Middleman Boilerplate Banner](source/assets/images/banner-meta.jpg)
+[![Middleman Boilerplate Banner](source/assets/images/banner-meta.jpg)](https://cveneziani.github.io/middleman-boilerplate/)
 
 # Middleman Boilerplate
 
