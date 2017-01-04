@@ -1,0 +1,45 @@
+.page-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-not-found-box {
+  font-size: 2em;
+  text-align: center;
+}
+
+@media #{breakpoint(small only)} {
+  .page-not-found {
+    flex-direction: column;
+  }
+
+  .page-not-found-box {
+    margin: 1em 0;
+  }
+
+  .page-not-found-illustration {
+    padding: 1em 0;
+    background-color: $primary-color;
+  }
+}
+
+@media #{breakpoint(medium up)} {
+  .x404 {
+    .top-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .page-not-found {
+    min-height: 100vh;
+    flex-direction: flex-start;
+  }
+
+  .page-not-found-box {
+    margin-bottom: 2em;
+  }
+}
