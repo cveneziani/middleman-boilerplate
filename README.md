@@ -68,12 +68,12 @@ boilerplate/
   │   └── ...
 ```
 
-## WHere to start?
+## Where to start?
 
 ### Settings
 
 You'll find the main settings of your website in `data/site.yml`.
-This is where you'll set your website **name**, **baseline**, **url**, **author name** and **contact email**.
+This is where you'll set your website **name**, **baseline**, **url**, **author name**, etc.
 
 ### Pages
 
@@ -82,7 +82,7 @@ Two pages are already provided for you:
 - **Home:** source/index.html.slim
 - **About:** source/about.html.slim
 
-Feel free to edit the home page or remove the about page.
+Feel free to edit the home page and/or remove the about page.
 
 ### Images
 
@@ -101,9 +101,9 @@ Have a look at `source/assets/stylesheets/all.css.scss` to have an overview of t
 Structure is as follows:
 
 1. **Settings:** colors, variables, etc.
-1. **Vendors:** foundation, etc.
+1. **Vendors:** foundation sites, etc.
 1. **Base:** h1, p, a, etc.
-1. **Components:** buttons, etc.
+1. **Components:** buttons, lists, etc.
 1. **Layout:** navbar, footer, etc.
 1. **Pages:** custom styling per page
 
@@ -117,8 +117,8 @@ To install a vendor stylesheet with **Yarn**, use the following command:
 $ yarn add --dev foundation-sites # for instance, for Foundation Sites
 ```
 
-Any stylesheet added with **Yarn** is direcly available as import in your stylesheet file.
-To import a stylesheet, just use `@import` with the path to the file. It should be a **relative path** to `node_modules` folder.
+Any stylesheet added with **Yarn** can be imported into your stylesheet file.
+To import a stylesheet, just use `@import` with the path to the file. It should be a **path relative** to the `node_modules/` folder.
 
 For instance, we bundled this boilerplate with `foundation-sites`. The file we want to load is `node_modules/foundation-sites/scss/foundation.scss`. Todo so, in **Vendors section** of `all.css.scss` we added the following line:
 
@@ -128,15 +128,16 @@ For instance, we bundled this boilerplate with `foundation-sites`. The file we w
 
 ### Style Guide
 
-We also provide a **style guide** page. To have a look at it, just open a page on [http://localhost:4567/style-guide.html](http://localhost:4567/style-guide.html)
+We also provide a **style guide** page. To have a look at it, just open the following link [http://localhost:4567/style-guide.html](http://localhost:4567/style-guide.html)
 
 Anytime you change a color / font, add a vendor plugin or a component, this page should be updated in order to showcase what's available to design your pages.
 
 ### Meta Tags
+
 We provide a default preset of meta tag rules. They're based on 2 things:
 
-- `data.site` hash for any default configuration
-- **frontmatter** variables provided in every HTML page template for per page configuration
+- **Default configuration:** `data.site` hash defined in `data/site.yml`
+- **Per page configuration:** `frontmatter` variables provided in every HTML page template
 
 The following rules are applied:
 
@@ -146,11 +147,12 @@ The following rules are applied:
 - **Image:** Uses the first available frontmatter variable between `banner_picture` and `cover_picture`. Otherwise, fallbacks to `banner-meta.jpg`
 - **Site Name:** Uses `data.site.name`
 - **Twitter Account:** Uses `data.site.twitter`
-- **Geocoding:** Uses the `data.site.geocoding` hash.
-- **URL:** Computed based on `data.site.url` and the current page seen.
+- **Geocoding:** Uses `data.site.geocoding` hash.
+- **URL:** Computed based on `data.site.url` and the current page.
 
 If you want to change some of these rules, have a look at `helpers/meta_tags_helper.rb`
-And feel free to fine tune the frontmatter variables on all your pages.
+
+Feel free to fine tune the frontmatter variables on all your pages.
 
 As a recap, here are the variables that can be customized per page:
 
@@ -161,7 +163,15 @@ As a recap, here are the variables that can be customized per page:
 
 ## Still under discussion
 
-Choose a **Javascript** pipeline. Might be **Webpack**.
+Choosing a **Javascript** pipeline. Might be **Webpack**.
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Added some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
 
 ## License
 
