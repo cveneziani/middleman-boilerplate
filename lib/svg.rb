@@ -7,7 +7,7 @@ require 'oga'
 #   SVG.inline('images/square.svg', class: 'logo', alt: 'Website logo')
 #   # => "<svg role="img" aria-label="Website logo" class="logo"
 #          width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-#           <title>Website logo</title>
+#           <desc>Website logo</desc>
 #           <path d="M10 10 H 90 V 90 H 10 L 10 10"/>
 #         </svg>"
 class SVG
@@ -25,7 +25,7 @@ class SVG
   #                      Override any existing class value.
   #             :alt   - String used to add accessibility and SEO to the SVG
   #                      - Set `role="img"` and `aria-label` attributes
-  #                      - Add a `title` element
+  #                      - Add a `desc` element
   #
   # Examples
   #
@@ -37,7 +37,7 @@ class SVG
   #   SVG.inline('images/square.svg', class: 'logo', alt: 'Website logo')
   #   # => "<svg role="img" aria-label="Website logo" class="logo"
   #          width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-  #           <title>Website logo</title>
+  #           <desc>Website logo</desc>
   #           <path d="M10 10 H 90 V 90 H 10 L 10 10"/>
   #         </svg>"
   #
@@ -72,11 +72,11 @@ class SVG
   end
 
   def apply_alt_option(svg)
-    title            = Oga::XML::Element.new(name: :title)
-    title.inner_text = options[:alt]
+    desc            = Oga::XML::Element.new(name: :desc)
+    desc.inner_text = options[:alt]
 
     svg.set('aria-label', options[:alt])
-    svg.children << title
+    svg.children << desc
   end
 
   def apply_class_option(svg)
