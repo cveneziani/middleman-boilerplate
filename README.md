@@ -93,9 +93,11 @@ Four images are provided:
 
 - `logo.jpg` mainly used as favicon
 - `banner-meta.jpg` used for meta tag cards
-- and the other ones are used on the homepage
+- and the other ones are used on homepage & 404 page
 
 Again, feel free to change or remove them.
+
+*Hint:* Have a look at the homepage template to see how we inline SVG images.
 
 ### Stylesheets
 

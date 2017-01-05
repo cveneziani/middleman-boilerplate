@@ -5,7 +5,7 @@
 @import "settings/variables";
 
 // Vendors
-@import 'vendors-settings/foundation';
+@import "vendors-settings/foundation";
 @import "foundation-sites/scss/foundation";
 @include foundation-everything(true);
 

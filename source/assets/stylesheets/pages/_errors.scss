@@ -22,6 +22,19 @@
     padding: 1em 0;
     background-color: $primary-color;
   }
+
+  .logo {
+    .body {
+      stroke: $grey;
+      fill: $white;
+      fill-opacity: 1;
+    }
+
+    .toppings {
+      fill: $grey;
+      fill-opacity: 1;
+    }
+  }
 }
 
 @media #{breakpoint(medium up)} {
@@ -41,5 +54,16 @@
 
   .page-not-found-box {
     margin-bottom: 2em;
+  }
+
+  .logo {
+    .body {
+      stroke: $grey;
+    }
+
+    .toppings {
+      fill: $grey;
+      fill-opacity: 1;
+    }
   }
 }

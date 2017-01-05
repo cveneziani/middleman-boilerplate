@@ -28,6 +28,17 @@
 
   .logo {
     height: 18.75em;
+
+    .body {
+      stroke: $grey;
+      fill: $white;
+      fill-opacity: 1;
+    }
+
+    .toppings {
+      fill: $grey;
+      fill-opacity: 1;
+    }
   }
 }
 
