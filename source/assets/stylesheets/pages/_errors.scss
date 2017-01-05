@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .logo {
+    max-width: 100%;
+  }
 }
 
 .page-not-found-box {
@@ -49,6 +53,7 @@
 
   .page-not-found {
     min-height: 100vh;
+    padding: 4em 0;
     flex-direction: flex-start;
   }
 
