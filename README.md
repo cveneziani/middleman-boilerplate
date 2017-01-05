@@ -97,7 +97,7 @@ Four images are provided:
 
 Again, feel free to change or remove them.
 
-*Hint:* Have a look at the homepage template to see how we inline SVG images.
+*Hint:* Have a look at the homepage template to see how to inline SVG images.
 
 ### Stylesheets
 
