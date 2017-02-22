@@ -6,6 +6,13 @@ This is a boilerplate for [Middleman 4](http://middlemanapp.com/).
 
 ## What's included?
 
+### Snippets & Pages
+
+- [Meta tags](#meta-tags)
+- [SVG images](#images)
+- [Home, about & 404 pages](#pages)
+- [Style Guide page](#style-guide)
+
 ### Tooling
 
 - [Slim](http://slim-lang.org/) for templating
