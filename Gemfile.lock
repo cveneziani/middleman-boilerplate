@@ -56,7 +56,7 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.0.1)
       addressable (~> 2)
-    ffi (1.9.14)
+    ffi (1.9.25)
     haml (4.0.7)
       tilt
     hamster (3.0.0)
@@ -169,4 +169,4 @@ DEPENDENCIES
   slim (~> 3.0.7)
 
 BUNDLED WITH
-   1.13.7
+   1.17.1
